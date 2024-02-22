@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dad Joke</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="img/laughdad.jpeg" type="image/x-icon">
 </head>
@@ -11,21 +12,35 @@
 
 <div class="background">
 
-  <h3 class="time-heading">Current Time</h2>
-  <h4 id="time"></h4>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-4 time-heading">
+        <h3>Time</h3>
+        <h4 id="time"></h4>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-3 date-heading">
+        <h3>Date</h3>
+        <h4 id="date"></h4>
+      </div>
+    </div>
 
-  <h3 class="date-heading">Current Date</h2>
-    <h4 id="date"></h4>
-
-  <div class="center">
-    <h1 class="inner-text">Dad Jokes !</h1>
-    <button class="btn" id="joke" onclick="getDadJokes()">Get Random joke</button>
-    <h4 id="dadJoke" class="joke"> Click to show a joke</h4>
+    <div class="row">
+      <div class="col-md-6 center">
+        <h1 class="inner-text">Dad Jokes !</h1>
+        <button class="btn" id="joke" onclick="getDadJokes()">Get Random joke</button>
+        <h4 id="dadJoke" class="joke"> Click to show a joke</h4>
+      </div>
+    </div>
   </div>
+
 </div>
-  
-      <script src="script.js"></script>
-      
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
-
