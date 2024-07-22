@@ -12,7 +12,7 @@ const getDadJokes = async () => {
 	console.log(data);
 	return data;
 }
-
+ 
 // function showTime(){
 // 	var date = new Date();
 // 	var current_date = date.getDate()+"-"+(date.getMonth()+1)+"-"+ date.getFullYear();
